@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.time.format.DateTimeParseException;
 
-class Tarefa {
+ public class Tarefa {
     // Atributos privados
     private String titulo;
     private String descricao;
@@ -79,7 +79,7 @@ class Tarefa {
 
         return ChronoUnit.DAYS.between(hoje, dataPrazo);
     }
-}
+ }
 
 public class Main {
     public static void main(String[] args){
@@ -105,7 +105,5 @@ public class Main {
         System.out.print("Novo prazo da tarefa 1: ");
         tarefa1.setPrazo("2024-15-48");
 
-        TarefaUrgente tarefaUrg1=new TarefaUrgente("Estudar para a prova ","conceitos de pqd ","2024-10-02","Não entendi nada")
-tarefaUrg1.exibirDetalhes();
     }
 }
